@@ -90,6 +90,7 @@ public class DBUtility {
     //Add update existing game entry
     public void updateExistingGame(long id, String gameName, String platform) {};
 
+    //Get game data
     public String getGameInfo(long id){ return ""; };
 
     public HibernateUtil getHb() {
