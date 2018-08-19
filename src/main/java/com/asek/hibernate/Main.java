@@ -8,12 +8,19 @@ public class Main {
         DBUtility db = new DBUtility();
 
         PCGame newGame = new PCGame();
-        newGame.setId(710);
-        newGame.setTitle("PUBG");
+        newGame.setId(3);
+        newGame.setTitle("WoW");
         newGame.setPlatform("PC");
 
-        db.addNewGame(newGame);
-        db.deleteGame(10);
+        PCGame updatedGame = new PCGame();
+        updatedGame.setId(1111);
+        updatedGame.setTitle("Need for Speed: Most Wanted");
+        updatedGame.setPlatform("Playstation");
+
+//        db.addNewGame(newGame);
+//        db.updateExistingGame(updatedGame);
+//        db.deleteGame(1);
+        System.out.println(db.getGameInfo(91991));
         db.shutdown();
     }
 }
